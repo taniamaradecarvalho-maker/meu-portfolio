@@ -3,7 +3,7 @@ const projetosTania = [
         nome: "Atividade 01 - MVP",
         descricao: "Primeira versão do portfólio profissional desenvolvida com HTML5, CSS3 e JavaScript dinâmico.",
         // Coloque aqui o link do repositório da Tânia Carvalho
-        link: "https://github.com/taniacarvalho/meu-portfolio" 
+        link: "https://github.com/taniamaradecarvalho-maker/meu-portfolio" 
     },
     {
         nome: "Atividade 02 - React",
