@@ -1,31 +1,27 @@
-// Array de objetos com os projetos
-const projetosDaAmiga = [
+const projetosTania = [
     {
-        nome: "Meu Primeiro MVP",
-        descricao: "Desenvolvimento de um portfólio funcional usando tecnologias web fundamentais.",
-        link: "#"
+        nome: "Atividade 01 - MVP",
+        descricao: "Primeira versão do portfólio profissional desenvolvida com HTML5, CSS3 e JavaScript dinâmico.",
+        // Coloque aqui o link do repositório da Tânia Carvalho
+        link: "https://github.com/taniacarvalho/meu-portfolio" 
     },
     {
-        nome: "Design de Interface",
-        descricao: "Estudo de cores e tipografia focado na experiência da usuária moderna.",
-        link: "#"
-    },
-    {
-        nome: "Lógica com JS",
-        descricao: "Manipulação de dados dinâmicos para exibição de conteúdo em tempo real.",
+        nome: "Atividade 02 - React",
+        descricao: "Migração e componentização do portfólio utilizando React e publicação via Vercel.",
         link: "#"
     }
 ];
 
-// Função para renderizar no HTML
 const container = document.getElementById('lista-projetos');
 
-projetosDaAmiga.forEach(projeto => {
+projetosTania.forEach(projeto => {
     const cardHTML = `
         <div class="card">
-            <h3>${projeto.nome}</h3>
-            <p>${projeto.descricao}</p>
-            <a href="${projeto.link}" target="_blank">Ver Projeto ✨</a>
+            <div>
+                <h3>${projeto.nome}</h3>
+                <p>${projeto.descricao}</p>
+            </div>
+            <a href="${projeto.link}" target="_blank">Ver Repositório ✨</a>
         </div>
     `;
     container.innerHTML += cardHTML;
