@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffafb; /* Fundo levemente rosado */
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(255, 182, 193, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff8fa3;
+    font-weight: 600;
+}
+
+/* Seção Sobre */
+.section-sobre {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ffb3c1;
+    object-fit: cover;
+}
+
+h1 {
+    color: #ff758f;
+    margin-bottom: 10px;
+}
+
+/* Grid de Projetos */
+#projetos {
+    padding: 60px 20px;
+    background-color: #ffe5ec;
+}
+
+#projetos h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #c9184a;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cards de Projetos */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border-bottom: 4px solid #ffb3c1;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #ff758f;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #c9184a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #ff8fa3;
+}
+
+/* Responsividade Básica */
+@media (max-width: 600px) {
+    h1 { font-size: 1.5rem; }
+}
