@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fffafb; /* Fundo levemente rosado */
+    background-color: #fffafb;
     color: #4a4a4a;
     line-height: 1.6;
 }
@@ -40,12 +40,16 @@ nav a {
     font-weight: 600;
 }
 
-/* Seção Sobre */
+.logo {
+    font-weight: 600;
+    color: #ff758f;
+    font-size: 1.5rem;
+}
+
 .section-sobre {
     padding: 60px 20px;
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .container-perfil {
@@ -53,6 +57,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    text-align: center;
 }
 
 .foto-perfil {
@@ -68,7 +73,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Grid de Projetos */
 #projetos {
     padding: 60px 20px;
     background-color: #ffe5ec;
@@ -88,7 +92,6 @@ h1 {
     margin: 0 auto;
 }
 
-/* Cards de Projetos */
 .card {
     background: white;
     padding: 25px;
@@ -96,6 +99,9 @@ h1 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
     border-bottom: 4px solid #ffb3c1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -105,6 +111,11 @@ h1 {
 .card h3 {
     color: #ff758f;
     margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
 }
 
 .card a {
@@ -119,9 +130,4 @@ footer {
     text-align: center;
     padding: 40px;
     color: #ff8fa3;
-}
-
-/* Responsividade Básica */
-@media (max-width: 600px) {
-    h1 { font-size: 1.5rem; }
 }
